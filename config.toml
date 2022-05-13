@@ -1,0 +1,39 @@
+baseURL = "https://containerd.io"
+languageCode = "en-us"
+title = "containerd"
+pygmentsUseClasses = true
+pygmentsCodefences = true
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+description        = "An industry-standard container runtime with an emphasis on simplicity, robustness, and portability"
+sansSerifFont      = "Lato"
+monospaceFont      = "Fira Mono"
+fontAwesomeVersion = "5.3.1"
+js = ["tippy-3.1.1", "jquery-3.6.0", "anchor-4.1.1", "clipboard-2.0.0", "app"]
+
+[params.home]
+# These parameters determine the text on the homepage
+subtitle = "An industry-standard container runtime with an emphasis on **simplicity**, **robustness** and **portability**"
+about = "**containerd** is available as a daemon for Linux and Windows. It manages the complete container lifecycle of its host system, from image transfer and storage to container execution and supervision to low-level storage to network attachments and beyond."
+features = [
+  "OCI Image Spec support",
+  "OCI Runtime Spec support (aka runC)",
+  "Image push and pull support",
+  "Container runtime and lifecycle support",
+  "Network primitives for creation, modification, and deletion of interfaces",
+  "Management of network namespaces containers to join existing namespaces",
+  "Multi-tenant supported with CAS storage for global images"
+]
+
+[params.versions]
+latest = "1.6.4"
+
+[[params.fonts]]
+name = "Lato"
+sizes = [300,400,600,700]
+
+[[params.fonts]]
+name = "Fira Mono"
+sizes = [300,400,600,700]
